@@ -7,7 +7,7 @@ import java.io.IOException;
 public class TeamInputStream {
 
     public static ArrayList<Person> readTeamFromFile(File file) throws IOException, ClassNotFoundException {
-        FileInputStream fis = new FileInputStream("persons.data");
+        FileInputStream fis = new FileInputStream(file);
 		ObjectInputStream ois = new ObjectInputStream(fis);
 
         ArrayList<Person> personsRead = new ArrayList<>();
